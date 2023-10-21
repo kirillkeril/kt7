@@ -28,7 +28,7 @@ class Car with _$Car {
     @Default("") @JsonKey(name: 'car_model') String model,
     @Default("") @JsonKey(name:'car_color') String color,
     @Default(0) @JsonKey(name: 'car_model_year') int year,
-    @Default("") @JsonKey(name: ")car_vin") String vin,
+    @Default("") @JsonKey(name: "car_vin") String vin,
     @Default(0) @PriceConverter() double price,
     @Default(false) bool availability,
   }) = _Car;

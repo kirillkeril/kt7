@@ -28,7 +28,7 @@ mixin _$Car {
   String get color => throw _privateConstructorUsedError;
   @JsonKey(name: 'car_model_year')
   int get year => throw _privateConstructorUsedError;
-  @JsonKey(name: ")car_vin")
+  @JsonKey(name: "car_vin")
   String get vin => throw _privateConstructorUsedError;
   @PriceConverter()
   double get price => throw _privateConstructorUsedError;
@@ -50,7 +50,7 @@ abstract class $CarCopyWith<$Res> {
       @JsonKey(name: 'car_model') String model,
       @JsonKey(name: 'car_color') String color,
       @JsonKey(name: 'car_model_year') int year,
-      @JsonKey(name: ")car_vin") String vin,
+      @JsonKey(name: "car_vin") String vin,
       @PriceConverter() double price,
       bool availability});
 }
@@ -125,7 +125,7 @@ abstract class _$$CarImplCopyWith<$Res> implements $CarCopyWith<$Res> {
       @JsonKey(name: 'car_model') String model,
       @JsonKey(name: 'car_color') String color,
       @JsonKey(name: 'car_model_year') int year,
-      @JsonKey(name: ")car_vin") String vin,
+      @JsonKey(name: "car_vin") String vin,
       @PriceConverter() double price,
       bool availability});
 }
@@ -194,7 +194,7 @@ class _$CarImpl extends _Car {
       @JsonKey(name: 'car_model') this.model = "",
       @JsonKey(name: 'car_color') this.color = "",
       @JsonKey(name: 'car_model_year') this.year = 0,
-      @JsonKey(name: ")car_vin") this.vin = "",
+      @JsonKey(name: "car_vin") this.vin = "",
       @PriceConverter() this.price = 0,
       this.availability = false})
       : super._();
@@ -218,7 +218,7 @@ class _$CarImpl extends _Car {
   @JsonKey(name: 'car_model_year')
   final int year;
   @override
-  @JsonKey(name: ")car_vin")
+  @JsonKey(name: "car_vin")
   final String vin;
   @override
   @JsonKey()
@@ -275,7 +275,7 @@ abstract class _Car extends Car {
       @JsonKey(name: 'car_model') final String model,
       @JsonKey(name: 'car_color') final String color,
       @JsonKey(name: 'car_model_year') final int year,
-      @JsonKey(name: ")car_vin") final String vin,
+      @JsonKey(name: "car_vin") final String vin,
       @PriceConverter() final double price,
       final bool availability}) = _$CarImpl;
   _Car._() : super._();
@@ -296,7 +296,7 @@ abstract class _Car extends Car {
   @JsonKey(name: 'car_model_year')
   int get year;
   @override
-  @JsonKey(name: ")car_vin")
+  @JsonKey(name: "car_vin")
   String get vin;
   @override
   @PriceConverter()
