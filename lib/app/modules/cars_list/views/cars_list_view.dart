@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:kt7/app/widgets/car_card.dart';
 
 import '../controllers/cars_list_controller.dart';
 
@@ -41,7 +42,7 @@ class CarsListView extends GetView<CarsListController> {
                       child: ListView.builder(
                           itemCount: controller.cars.length,
                           itemBuilder: (context, index) {
-                            return Text(controller.cars[index].model);
+                            return CarCard(car: controller.cars[index]);
                           }),
                     ),
                   ),

@@ -12,7 +12,7 @@ _$CarImpl _$$CarImplFromJson(Map<String, dynamic> json) => _$CarImpl(
       model: json['car_model'] as String? ?? "",
       color: json['car_color'] as String? ?? "",
       year: json['car_model_year'] as int? ?? 0,
-      vin: json[')car_vin'] as String? ?? "",
+      vin: json['car_vin'] as String? ?? "",
       price: json['price'] == null
           ? 0
           : const PriceConverter().fromJson(json['price'] as String),
@@ -25,7 +25,7 @@ Map<String, dynamic> _$$CarImplToJson(_$CarImpl instance) => <String, dynamic>{
       'car_model': instance.model,
       'car_color': instance.color,
       'car_model_year': instance.year,
-      ')car_vin': instance.vin,
+      'car_vin': instance.vin,
       'price': const PriceConverter().toJson(instance.price),
       'availability': instance.availability,
     };
